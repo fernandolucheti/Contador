@@ -5,21 +5,24 @@
 //  Created by Vinicius Miana on 2/18/15.
 //  Copyright (c) 2015 Vinicius Miana. All rights reserved.
 //
-
+////////chacal
 #import "SecondViewController.h"
 #import "Contador.h"
 
 @interface SecondViewController () {
-      Contador *contador;
+   Contador* contador; 
+    
 }
 
 @end
 
-@implementation SecondViewController
+@implementation SecondViewController{
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    contador = [Contador getInstance];
 }
 
 
@@ -32,7 +35,7 @@
 - (IBAction)click:(id)sender {
     _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
     _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
-    _total.text = [NSString stringWithFormat:@"%d", [contador getGirls] + [contador getBoys] ];
+    _total.text = [NSString stringWithFormat:@"%d", [contador getTotal] ];
 }
 
 

@@ -3,23 +3,28 @@
 //  ContaPessoas
 //
 //  Created by Vinicius Miana on 2/18/15.
-//  Copyright (c) 2015 Vinicius Miana. All rights reserved.
+//  Copyright (c) 2015 Fernando Lucheti. All rights reserved.
 //
+
+
+// Testando alterações para commit
 
 #import "FirstViewController.h"
 #import "Contador.h"
 
-@interface FirstViewController ()
+@interface FirstViewController (){
+    Contador* contador;
+}
 
 @end
 
 @implementation FirstViewController {
-    Contador *contador;
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    contador = [Contador getInstance];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
