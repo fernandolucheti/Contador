@@ -14,6 +14,7 @@
     
     int boy;
     int girl;
+
 }
 
 static Contador *_contador = nil;
@@ -36,9 +37,11 @@ static Contador *_contador = nil;
 
 - (void)maisUmCueca {
     boy = boy + 1;
+    [_mostrador atualizar];
 }
 - (void)maisUmaGata {
     girl++;
+    [_mostrador atualizar];
 }
 
 -(int)getBoys {
